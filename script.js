@@ -1,6 +1,6 @@
 const moveMe = document.getElementById("move-me");
 
-const moveSteps = 15;
+const moveSteps = 100;
 let x = 0;
 let y = 0;
 
