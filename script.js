@@ -27,3 +27,12 @@ document.addEventListener("keydown", (event) => {
     moveMe.style.left = `${x}px`;
   }
 });
+
+const movable = document.getElementById("move-me");
+
+document.addEventListener("click", (event) => {
+  const x = event.clientX - movable.offsetWidth / 2;
+  const y = event.clientY - movable.offsetHeight / 2;
+  movable.style.left = `${x}px`;
+  movable.style.top = `${y}px`;
+});
