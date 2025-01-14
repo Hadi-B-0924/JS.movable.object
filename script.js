@@ -1,6 +1,6 @@
 const moveMe = document.getElementById("moveMe");
 
-const moveSteps = 15;
+const moveAmount = 15;
 let x = 0;
 let y = 0;
 
@@ -8,22 +8,22 @@ document.addEventListener("keydown", (event) => {
   if (event.key.startsWith("Arrow")) {
     switch (event.key) {
       case "ArrowUp":
-        y -= moveSteps;
+        y -= moveAmount;
         break;
 
       case "ArrowDown":
-        y += moveSteps;
+        y += moveAmount;
         break;
 
       case "ArrowLeft":
-        x -= moveSteps;
+        x -= moveAmount;
         break;
 
       case "ArrowRight":
-        x += moveSteps;
+        x += moveAmount;
         break;
     }
-    moveSteps.style.top = `${y}px`;
-    moveSteps.style.left = `${x}px`;
+    moveMe.style.top = `${y}px`;
+    moveMe.style.left = `${x}px`;
   }
 });
