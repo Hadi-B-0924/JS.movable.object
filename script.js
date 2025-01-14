@@ -1,6 +1,6 @@
 const moveMe = document.getElementById("moveMe");
 
-const moveAmount = 15;
+const moveSteps = 15;
 let x = 0;
 let y = 0;
 
@@ -8,19 +8,19 @@ document.addEventListener("keydown", (event) => {
   if (event.key.startsWith("Arrow")) {
     switch (event.key) {
       case "ArrowUp":
-        y -= moveAmount;
+        y -= moveSteps;
         break;
 
       case "ArrowDown":
-        y += moveAmount;
+        y += moveSteps;
         break;
 
       case "ArrowLeft":
-        x -= moveAmount;
+        x -= moveSteps;
         break;
 
       case "ArrowRight":
-        x += moveAmount;
+        x += moveSteps;
         break;
     }
     moveMe.style.top = `${y}px`;
