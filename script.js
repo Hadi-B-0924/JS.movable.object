@@ -1,6 +1,6 @@
 const moveMe = document.getElementById("move-me");
 
-const moveSteps = 100;
+const moveSteps = 50;
 let x = 0;
 let y = 0;
 
@@ -27,8 +27,6 @@ document.addEventListener("keydown", (event) => {
     moveMe.style.left = `${x}px`;
   }
 });
-
-console.log(innerHeight);
 
 const movable = document.getElementById("move-me");
 
