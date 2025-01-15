@@ -28,6 +28,8 @@ document.addEventListener("keydown", (event) => {
   }
 });
 
+console.log(innerHeight);
+
 const movable = document.getElementById("move-me");
 
 document.addEventListener("click", (event) => {
